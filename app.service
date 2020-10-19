@@ -1,0 +1,13 @@
+[Unit]
+Description=Watch for CWT artifacts
+After=syslog.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/local/bin/cwt-deploy-watch
+
+[Install]
+WantedBy=multi-user.target
