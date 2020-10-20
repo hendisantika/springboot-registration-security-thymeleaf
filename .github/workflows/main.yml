@@ -43,6 +43,6 @@ jobs:
           username: ${{ secrets.ocean_user }}
           password: ${{ secrets.ocean_pass }}
           port: ${{ secrets.ocean_port }}
-          source: "cwt-spring/target/cwt-spring-SNAPSHOT.jar"
+          source: "/springboot-registration-security-thymeleaf/target/springboot-registration-security-thymeleaf-1.0.0.jar"
           strip_components: 2
           target: "/var/github-release"
